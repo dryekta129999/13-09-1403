@@ -1,0 +1,15 @@
+{% extends '_base.html' %}
+{% block body %}
+	<form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+{#        <input type="password" placeholder="پسورد قبلی خو د را وارد نمایید" name="old_password">#}
+{#        <br><br>#}
+{#        <input type="password" placeholder="پسورد جدید خو د را وارد نمایید" name="new_password1">#}
+{#        <br><br>#}
+{#        <input type="password" placeholder="پسورد جدید خو د را مجدد دوباره تکرار نمایید" name="new_password2">#}
+{#        <br><br>#}
+        <button type="submit">Password Change</button>
+
+    </form>
+{% endblock %}
